@@ -90,7 +90,7 @@ function App() {
 
           <p>Click ONE time to CROSS OUT the item.</p>
           <p>Click SECOND time to REMOVE the line through.</p>
-          <p>Double Click to REMOVE the item entirely</p>
+          <p>Double-click to remove the item in its entirety.</p>
 
     </div>
     </>
