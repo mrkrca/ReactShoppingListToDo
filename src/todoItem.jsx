@@ -1,24 +1,19 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
+function TodoItem(props) {
+  const [isDone, setIsDone] = useState(false);
 
-function TOdoItem(props) {
+  function crossItem() {
+    setIsDone((previous) => !previous);
+  }
 
-const [isDone, setIsDone] =useState(false)
-
-
-function crossItem() {
-    setIsDone((previus)=> !previus)
-}
-
-
-return (
+  return (
     <div onClick={crossItem} onDoubleClick={() => props.removeItem(props.id)}>
-        <li style={{textDecoration: isDone? "line-through" : "none"}} key={props.key}>{props.text}</li>
+      <li style={{ textDecoration: isDone ? "line-through" : "none" }}>
+        {props.text}
+      </li>
     </div>
-         
-    
-)
-
+  );
 }
 
-export default TOdoItem;
+export default TodoItem;
