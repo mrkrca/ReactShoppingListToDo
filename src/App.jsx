@@ -52,7 +52,9 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <>
+    <div className="main">
+<div className="container">
       <div className="heading">
         <h1>Prodavnica</h1>
       </div>
@@ -71,7 +73,7 @@ function App() {
       </button>
      </div>
       <div>
-        <ul>
+        <ol>
           {items.map((item, index) => (
             <ToDoItem
               removeItem={remove}
@@ -80,9 +82,21 @@ function App() {
               text={item}
             />
           ))}
-        </ul>
+        </ol>
       </div>
+      
     </div>
+
+
+          <p>Click ONE time to CROSS OUT the item.</p>
+          <p>Click SECOND time to REMOVE the line through.</p>
+          <p>Double Click to REMOVE the item entirely</p>
+
+    </div>
+    </>
+
+    
+    
   );
 }
 
