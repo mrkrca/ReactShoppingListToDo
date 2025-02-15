@@ -12,6 +12,7 @@ function TodoItem(props) {
       <li style={{ textDecoration: isDone ? "line-through" : "none" }}>
         {props.text}
       </li>
+      <hr />
     </div>
   );
 }
